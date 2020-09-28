@@ -58,5 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-Mission Demolition Prototype/Temp/UnityLockfile
-Mission Demolition Prototype/Library/SourceAssetDB
+Mission Demolition Prototype/Temp
+Mission Demolition Prototype/Library
+
