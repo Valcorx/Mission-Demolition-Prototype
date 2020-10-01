@@ -684,6 +684,10 @@ MonoBehaviour:
   castlePos: {x: 50, y: -9.5, z: 0}
   castles:
   - {fileID: 6565740761153580780, guid: 3faae3b3c2279fe4384ab8170479e1bf, type: 3}
+  - {fileID: 6535520145534466034, guid: 270572f1e63c00a4cbdd1987b2c17047, type: 3}
+  - {fileID: 7169254845673625690, guid: 21d5a9f4bbed8c14e93d0b2c89e4b38a, type: 3}
+  - {fileID: 6535520145534466034, guid: c813ab436be87e841925594034127390, type: 3}
+  - {fileID: 6535520145534466034, guid: 661910b8a5214e44288b98c041c8808b, type: 3}
   level: 0
   levelMax: 0
   shotsTaken: 0
@@ -1340,7 +1344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabProjectile: {fileID: 7231196027606221994, guid: e6af9771f272cb449ad51713c57840d7, type: 3}
-  velocityMult: 10
+  velocityMult: 15
   launchPoint: {fileID: 0}
   launchPos: {x: 0, y: 0, z: 0}
   projectile: {fileID: 0}
