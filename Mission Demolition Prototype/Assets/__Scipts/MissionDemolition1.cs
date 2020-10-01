@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum GameMode
 {
@@ -49,9 +50,9 @@ public class MissionDemolition1 : MonoBehaviour
         }
 
         GameObject[] gos = GameObject.FindGameObjectsWithTag("Projectile");
-        foreach (GameObject ptemp in gos)
+        foreach (GameObject pTemp in gos)
         {
-            Destroy(ptemp);
+            Destroy(pTemp);
         }
 
         castle = Instantiate<GameObject>(castles[level]);
@@ -91,7 +92,9 @@ public class MissionDemolition1 : MonoBehaviour
         level++;
         if (level == levelMax)
         {
+            
             level = 0;
+            SceneManager.LoadScene("_Scene_GameOver");
         }
 
         StartLevel();
@@ -106,7 +109,7 @@ public class MissionDemolition1 : MonoBehaviour
         showing = eView;
         switch (showing)
         {
-            case "Show slingshot":
+            case "Show Slingshot":
                 FollowCam.POI = null;
                 uitButton.text = "Show Castle";
                 break;
